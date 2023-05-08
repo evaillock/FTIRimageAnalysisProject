@@ -4,6 +4,8 @@
 Created on Tue Apr 25 17:45:38 2023
 
 @author: ijvaillant
+
+This runs to check that all of the xy data in the jcamp files are in '(X++(Y..Y))' format
 """
 
 import jcamp
