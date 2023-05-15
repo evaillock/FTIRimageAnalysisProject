@@ -11,6 +11,9 @@ import os
 import shutil
 import glob
 
+#this script checks the files scraped and moves them to a good units or bad units folder
+#in this case good units are files already in wavenumber and absorbance
+
 #path that contains the IR files
 path = os.path.join(os.getcwd(), 'scrapedFTIR', 'ir')
 

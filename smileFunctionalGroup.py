@@ -10,6 +10,24 @@ import rdkit
 from rdkit import Chem
 
 def functional_group_exists(smiles, functional_group):
+    '''
+    This function accepts a chemical from is canonical smiles and a functional group in SMARTS format
+    and returns a 1 if the functional group is in the molecule and a 0 if it is not
+
+    Parameters
+    ----------
+    smiles : String
+        The smiles string of the chemical you are checking.
+    functional_group : String
+        SMARTS string for the functional group of interest.
+
+    Returns
+    -------
+    int
+        1 means the functional group does exist within the molecule
+        0 indicates the functional group does not exist within the molecule.
+
+    '''
     mol = Chem.MolFromSmiles(smiles)
     if mol is None:
         return 0

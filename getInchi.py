@@ -10,6 +10,20 @@ import requests
 from bs4 import BeautifulSoup
 
 def getInchi(cas):
+    '''
+    This function accepts a chemical CAS number and returns the inchi key from the NIST webbook
+
+    Parameters
+    ----------
+    cas : String
+        String version of the chemical CAS registry number.
+
+    Returns
+    -------
+    inchi_key : String
+        The INCHI key for the chemical.
+
+    '''
     # Construct the URL for the NIST website search page
     url = f"https://webbook.nist.gov/cgi/cbook.cgi?Name={cas}&Units=SI&Mask=20"
 
